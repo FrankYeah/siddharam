@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lodash on Siddharam</title>
-    <link>http://siddharam.com.tw/tags/lodash/</link>
+    <link>https://siddharam.com.tw/tags/lodash/</link>
     <description>Recent content in Lodash on Siddharam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://siddharam.com.tw/tags/lodash/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://siddharam.com.tw/tags/lodash/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>lodash 的程式碼實現</title>
-      <link>http://siddharam.com.tw/post/20190423/</link>
+      <link>https://siddharam.com.tw/post/20190423/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://siddharam.com.tw/post/20190423/</guid>
+      <guid>https://siddharam.com.tw/post/20190423/</guid>
       <description>lodash
 這次要挑選常用的 lodash function，嘗試自己手寫。lodash 的 GitHub 有他們的實作方式，練習過後可以去比較兩邊程式碼有何差異。
  (1)
