@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tops on Siddharam</title>
+    <link>https://siddharam.com.tw/top/</link>
+    <description>Recent content in Tops on Siddharam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Apr 2019 15:09:57 +0800</lastBuildDate>
+    
+	<atom:link href="https://siddharam.com.tw/top/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>關於</title>
+      <link>https://siddharam.com.tw/top/about/</link>
+      <pubDate>Wed, 24 Apr 2019 15:09:57 +0800</pubDate>
+      
+      <guid>https://siddharam.com.tw/top/about/</guid>
+      <description>介紹 工業管理系畢業後，在五間媒體產業待了三年，當過電視台網路編輯、新移 / 住民議題的月報記者、新媒體記者、人文歷史雜誌記者、科技線記者。在 2018 年</description>
+    </item>
+    
+  </channel>
+</rss>
