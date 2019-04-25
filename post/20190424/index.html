@@ -247,24 +247,50 @@ firebase 可以說是造福前端工程師的好工具。<br><br>
 <img style="margin-bottom:8px" src="https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/firebase_database_realtimedatabase_person.PNG?alt=media&token=29fad681-dfb2-4ff1-820d-ee944ad4225d"/>
 <div style="text-align:center; font-weight:bold">Realtime Database</div><br>
 然後點選進「person」，複製上方網址如「https://xxx.firebaseio.com/person」，最後面再加「.json」，就可以在瀏覽器上讀到檔案。如果發現讀不到檔案，就要去「規則」裡，將「read」改成「true」，就可以了。
+<br><br>
+這些規則都是可以自由設定，並以 json 格式撰寫。在「write」部分，可以透過 javascript 的方式在前端寫入。下方有 auth.uid 的設置，那是下一段要說明 authentication，它可以限制只有某些帳號才能進行讀寫動作。<br><br>
 
 
+<pre>
 
+{
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+     "member": {
+        ".read": true,
+        ".write": true
+      },
+     "feedback": {
+        ".read": true,
+        ".write": true
+      },
+     "counter": {
+        ".read": true,
+        ".write": true
+      },
+     "list": {
+        ".read": true,
+        ".write": true
+      },
+     "article": {
+        ".read": true,
+        ".write": "auth.uid == 'hl2J8rF6WRhNF3R73gVoWfJwgQe2' || auth.uid == '8KZPB9hnGXf9FW5Dk97Ac4EY1jB2'",
+      }
+
+  }
+}
+
+</pre><br><br>
+
+authentication，讓你的網站可以進行會員註冊、登入。<br><br>
+
+<b>Email: aaa24295234@gmail.com</b><br><br>
 </article>
 
-<p><br>
-<div id="busuanzi_container_page_pv">
+<p><div id="busuanzi_container_page_pv">
   閱讀量<span id="busuanzi_value_page_pv"></span>次
 </div>
-&nbsp;&nbsp;
-<div id="busuanzi_container_site_pv">
-  Pv:<span id="busuanzi_value_site_pv"></span>次
-</div>
-&nbsp;
-<div id="busuanzi_container_site_uv">
-  Uv:<span id="busuanzi_value_site_uv"></span>次
-</span>
-</div></p>
+&nbsp;&nbsp;</p>
 
 <script src="../../js/post.js"></script>
 
