@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="lodash 的程式碼實現" />
-    <meta property="og:title" content="lodash 的程式碼實現" />
-    <meta property="twitter:title" content="lodash 的程式碼實現" />
+    <meta name="title" content="Siddharam | 寫程式的文字人 | 西打藍" />
+    <meta property="og:title" content="Siddharam | 寫程式的文字人 | 西打藍" />
+    <meta property="twitter:title" content="Siddharam | 寫程式的文字人 | 西打藍" />
     
 
     
-    <meta name="description" content="這次來挑選常用的 lodash function，嘗試自己手寫。lodash 的 GitHub 有他們的實作方式，練習過後可以去比較兩邊程式碼有何差異。">
-    <meta property="og:description" content="這次來挑選常用的 lodash function，嘗試自己手寫。lodash 的 GitHub 有他們的實作方式，練習過後可以去比較兩邊程式碼有何差異。" />
-    <meta property="twitter:description" content="這次來挑選常用的 lodash function，嘗試自己手寫。lodash 的 GitHub 有他們的實作方式，練習過後可以去比較兩邊程式碼有何差異。" />
+    <meta name="description" content="文字紀錄可能性 | 程式創造可能性">
+    <meta property="og:description" content="文字紀錄可能性 | 程式創造可能性" />
+    <meta property="twitter:description" content="文字紀錄可能性 | 程式創造可能性" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="教學, lodash" name="keywords">
+    <meta content="" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>lodash 的程式碼實現-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>後端-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190423/">
+    <link rel="canonical" href="/tags/%E5%BE%8C%E7%AB%AF/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -168,37 +168,15 @@
 
 
 
-
-<style type="text/css">
-      
-</style>
 <header class="intro-header">
+
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <div class="tags">
-                        
-                        <a class="tag" href="/tags/%E6%95%99%E5%AD%B8" title="教學">
-                            教學
-                        </a>
-                        
-                        <a class="tag" href="/tags/lodash" title="lodash">
-                            lodash
-                        </a>
-                        
-                    </div>
-                    <h1>lodash 的程式碼實現</h1>
-                    <h2 class="subheading">員工訓練之一</h2>
-                    <span class="meta">
-			Posted by 
-			
-			    Siddharam
-			 
-			on 
-			Tuesday, April 23, 2019
-                        
-                    </span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>Siddharam </h1>
+                    
+		    <span class="subheading">寫程式的文字人</span>
                 </div>
             </div>
         </div>
@@ -207,200 +185,111 @@
 
 
 
+  
+<div class="container">
+    <div class="row">
+        
+        
+   	    <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container
+        ">
+            
 
-<article>
-    <div class="container">
-        <div class="row">
+<div class="post-preview">
+    <a href="https://siddharam.com.tw/post/20190424/">
+        <h2 class="post-title">
+            firebase 作為後端的運用
+        </h2>
+	
+        <h3 class="post-subtitle">
+            例會分享主題
+        </h3>
+	
+        <div class="post-content-preview">
+	
+            firebase 適合單純想寫前端的工程師使用，它有即時可用的資料庫、免費的 hosting 服務、會員帳號的權限管理等，也提供圖片儲存空間，以及後端程式碼執行空間，相當容易使用......
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    Posted by Siddharam Wednesday, April 24, 2019
+    </p>
+</div>
+<hr>
+
 
             
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
-
-                
-                
-                
-                
-                <article>
-<h1>lodash</h1><br>
-這次來挑選常用的 <a href='https://lodash.com/'>lodash function</a>，嘗試自己手寫。<br>lodash 的 <a href='https://github.com/lodash/lodash'>GitHub</a> 有他們的實作方式，練習過後可以去比較兩邊程式碼有何差異。<br><br>
-
-<h1>練習</h1><br>
-<code>
-(1) dropRight(array, 從右邊移除多少個數)<br><br>
-_.dropRight([1, 2, 3], 2);<br>
-// => [1]
-</code><br>
-
-<pre>
-
-function drop (array, count) {
-  return array.slice(0, array.length-count)
-}
-
-drop([1,2,3,4,5,6,7,8], 2)
-//  [1, 2, 3, 4, 5, 6]
-
-</pre><br><br>
-
-<code>
-(2) findIndex(array, 找到符合條件的 index)<br><br>
-var users = [<br>
-  { 'user': 'barney',  'active': false },<br>
-  { 'user': 'fred',    'active': false },<br>
-  { 'user': 'pebbles', 'active': true }<br>
-];<br><br>
- 
-_.findIndex(users, function(o) { return o.user == 'barney'; });<br>
-// => 0<br><br>
- 
-_.findIndex(users, { 'user': 'fred', 'active': false });<br>
-// => 1<br>
-</code><br>
-
-<pre>
-
-var users = [ 
-  { 'user': 'barney',  'active': false },
-  { 'user': 'fred',    'active': false },
-  { 'user': 'pebbles', 'active': true }
-]
-
-function findIndex(array, types){
-    for(let i=0; i < array.length; i++){
-        if(array[i].user == types.user && array[i].active == types.active){
-            return i
-        }
-    } 
-}
-
-findIndex(users, { 'user': 'barney', 'active': false })
-// 0
-
-</pre><br><br>
-
-<code>
-(3) pull(array, 去除哪些 value)<br><br>
-var array = ['a', 'b', 'c', 'a', 'b', 'c'];<br>
-_.pull(array, 'a', 'c');<br>
-// => ['b', 'b']<br>
-</code><br>
-
-<pre>
-
-function pull(array, ...remove){
-  let newArray = [];
-  for(let i=0; i < array.length; i++){
-    for(let j=0 ; j < remove.length; j++){
-       if(array[i] == remove[j]){
-           newArray.push(i)
-       }
-    }
-  }<br>
-  for(let k=newArray.length; k>0; k--){
-    array.splice(newArray[k-1],1)
-  }
-  return array
-}<br>
-pull(['a','c','e','g','h','a'],'a','b','c','j','z')
-// ["e", "g", "h"]
-
-</pre><br><br>
-
-<code>
-(4) reverse(反轉哪些 array)<br><br>
-var array = [1, 2, 3];<br>
-_.reverse(array);<br>
-// => [3, 2, 1]<br>
-</code><br>
-
-<pre>
-
-function reverse(array){
-  let newArray = [];
-  for(let i=array.length; i>0; i--){
-    newArray.push(array[i-1])
-  }
-  return newArray
-}<br>
-reverse(['1','2','3','4'])
-// ["4", "3", "2", "1"]
-
-</pre>
-
-<br><code>
-(5) shuffle(array 洗牌)<br><br>
-_.shuffle([1, 2, 3, 4]);<br>
-// => [4, 1, 3, 2]
-</code><br>
-
-<pre><br>
-function shuffle(array){
-  for(let i=0 ; i < array.length; i++){
-    var rand = Math.floor(Math.random() * array.length)
-    var temp = array[rand]
-    array[rand] = array[i]                      
-    array[i] = temp
-  }
-  return array
-} <br>
-shuffle([1,2,3,4,5])
-// [1, 3, 5, 4, 2] random
-<br>
-</pre><br>
 
 
-<b>Email: aaa24295234@gmail.com</b><br><br>
 
-</article>
+       	</div>
+        
 
-<div style="color: #bfbfbf; font-size: 15px;" id="busuanzi_container_page_pv">
-  閱讀量<span id="busuanzi_value_page_pv"></span>次
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+    
+
+    
+	
+    <section class="">
+    
+    <div id="busuanzi_container_page_pv">
+        閱讀量：<span id="busuanzi_value_page_pv"></span> 次
+    </div><br>
+    <div id="busuanzi_container_site_uv">
+        訪客數：<span id="busuanzi_value_site_uv"></span> 次
+    </span>
+
+    <hr><h5><a href="/top/about">關於</a></h5>
+        <div class="short-about">
+            
+            
+                <p>文字紀錄可能性 | 程式創造可能性</p>
+            
+           
+           <ul class="list-inline"> 
+               
+               
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/FrankYeah">
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+
+    
+    
 </div>
 
-<script src="../../js/post.js"></script>
+	</div>
+</div>
 
-
-                
-
-                <hr>
-                <ul class="pager">
-                    
-                    <li class="previous">
-                        <a href="/post/20190420/" data-toggle="tooltip" data-placement="top" title="工程師日常 - RD 忙什麼？">&larr;
-                            上一篇</a>
-                    </li>
-                    
-                    
-                    <li class="next">
-                        <a href="/post/20190424/" data-toggle="tooltip" data-placement="top" title="firebase 作為後端的運用">新的一篇
-                             &rarr;</a>
-                    </li>
-                    
-                </ul>
-
-                
-<div id="disqus-comment"></div>
-
-
-
-            </div>
-            
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                
-                
-
-                
-                
-            </div>
-        </div>
-    </div>
-</article>
 
 
 
