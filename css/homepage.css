@@ -24,6 +24,16 @@
     margin-top: 0px!important;
 }
 
+.homepage-head-title-size {
+    font-size: 35px;
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+}
+
+.homepage-head-sub-title-size {
+    font-size: 20px;
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+}
+
 .article-h1-color{
     color: rgb(2, 186, 192);
     font-weight: 500;
