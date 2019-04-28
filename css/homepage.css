@@ -24,12 +24,12 @@
     margin-top: 0px!important;
 }
 
-.homepage-head-title-size {
+.article-title-size {
     font-size: 35px;
     font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 }
 
-.homepage-head-sub-title-size {
+.article-head-sub-title-size {
     font-size: 20px;
     font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 }
@@ -49,6 +49,8 @@
     .intro-header{
         background-image:url("https://firebasestorage.googleapis.com/v0/b/siddharam-6bb77.appspot.com/o/indonesia-elephant-with-two-person-rwd.jpg?alt=media&token=ce82d655-ad9b-438f-b344-7088cc9ff527");
     }
-
+    intro-header .post-heading h1 {
+        font-size: 26px;
+    }
 }
 
