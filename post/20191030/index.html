@@ -15,28 +15,28 @@
     
 
     
-    <meta name="title" content="ECharts 繪製柱狀圖 | 以 vue-echarts 為例" />
-    <meta property="og:title" content="ECharts 繪製柱狀圖 | 以 vue-echarts 為例" />
-    <meta property="twitter:title" content="ECharts 繪製柱狀圖 | 以 vue-echarts 為例" />
+    <meta name="title" content="語言只是工具，程式也是工具，什麼才是非工具的能力？" />
+    <meta property="og:title" content="語言只是工具，程式也是工具，什麼才是非工具的能力？" />
+    <meta property="twitter:title" content="語言只是工具，程式也是工具，什麼才是非工具的能力？" />
     
 
     
-    <meta name="description" content="ECharts，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設好了；而另一個常用的圖表套件則是 D3，它的自由度比較高，但上手難度相對也高......">
-    <meta property="og:description" content="ECharts，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設好了；而另一個常用的圖表套件則是 D3，它的自由度比較高，但上手難度相對也高......" />
-    <meta property="twitter:description" content="ECharts，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設好了；而另一個常用的圖表套件則是 D3，它的自由度比較高，但上手難度相對也高......" />
+    <meta name="description" content="朋友總能帶我脫離舒適圈，給了我一般上班族無法借鏡的思維，我的專業再怎麼深入，最多只能成為強大的工具人，而朋友則是使用不同工具，完成任務的人。">
+    <meta property="og:description" content="朋友總能帶我脫離舒適圈，給了我一般上班族無法借鏡的思維，我的專業再怎麼深入，最多只能成為強大的工具人，而朋友則是使用不同工具，完成任務的人。" />
+    <meta property="twitter:description" content="朋友總能帶我脫離舒適圈，給了我一般上班族無法借鏡的思維，我的專業再怎麼深入，最多只能成為強大的工具人，而朋友則是使用不同工具，完成任務的人。" />
     
 
     
     <meta property="twitter:card" content="summary" />
     
     
-    <meta content="前端, ECharts, 圖表, vue" name="keywords">
+    <meta content="生意" name="keywords">
     <meta content="Siddharam, 西打藍, 工程師日常, 技術筆記, Hugo, 記者日常" name="keyword"  >
     <link rel="shortcut icon" href="/img/favicon-siddharam.ico">
 
-    <title>ECharts 繪製柱狀圖 | 以 vue-echarts 為例-Siddharam | 寫程式的文字人 | 西打藍</title>
+    <title>語言只是工具，程式也是工具，什麼才是非工具的能力？-Siddharam | 寫程式的文字人 | 西打藍</title>
 
-    <link rel="canonical" href="/post/20190603/">
+    <link rel="canonical" href="/post/20191030/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -198,26 +198,14 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/%E5%89%8D%E7%AB%AF" title="前端">
-                            前端
-                        </a>
-                        
-                        <a class="tag" href="/tags/echarts" title="ECharts">
-                            ECharts
-                        </a>
-                        
-                        <a class="tag" href="/tags/%E5%9C%96%E8%A1%A8" title="圖表">
-                            圖表
-                        </a>
-                        
-                        <a class="tag" href="/tags/vue" title="vue">
-                            vue
+                        <a class="tag" href="/tags/%E7%94%9F%E6%84%8F" title="生意">
+                            生意
                         </a>
                         
                     </div>
-                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> June 3, 2019</p>
-                    <h1>ECharts 繪製柱狀圖 | 以 vue-echarts 為例</h1>
-                    <h3 class="subheading">最容易上手的圖表套件</h3>
+                    <p style="margin-bottom:4px; font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;"> October 30, 2019</p>
+                    <h1>語言只是工具，程式也是工具，什麼才是非工具的能力？</h1>
+                    <h3 class="subheading">中東國貿生意人告訴了我答案</h3>
                     <span class="meta">
 			
 
@@ -252,180 +240,51 @@
 
 <h3 class="article-h1-color">前言</h3><br>
 
+前幾天在思考一個問題：<br><br>
 
-這次介紹一個在公司很常使用的套件 - <a href="https://echarts.baidu.com/">ECharts</a>，是百度出品的圖表套件，它相當容易上手，大部分的 config 都幫你設計好了；而另一個常用的圖表套件則是 D3，它的自由度比較高，但上手難度相對也高。<br><br>
+當我們說，語言只是一個工具，程式只是一種工具，會計只是一種工具的時候，<br><br>
 
-這次就拿公司專案中，設計要我們畫的圖表作為範例吧。因為開發上是以 vue 為主，所以會使用 <a href="https://github.com/ecomfe/vue-echarts">vue-echarts</a>，但跟原生使用起來差異不大。那就開始吧。<br><br>
+什麼才是非工具的能力呢？<br><br>
 
+我想到的，是業務的溝通能力，還有管理團隊的能力。但這些答案始終不能說服我。<br><br>
 
-<img style="margin-bottom:8px;" src="https://frontenter.files.wordpress.com/2019/06/vue-echarts-pie.png"/>
-<div style="text-align:center">柱狀圖表作品。</div><br><br>
+而今天晚上去和朋友談架設網站的生意時，和朋友家人的談話中，給了我一些靈感回答這個問題。不過今天的內容不僅只回答這則問題而已。<br><br>
 
-<h3 class="article-h1-color">vue-echarts 實戰</h3><br>
+<h3 class="article-h1-color">談生意</h3><br>
 
-先安裝套件：<code>npm install echarts vue-echarts</code><br><br>
+朋友的媽媽在中東有買賣生意，專做 2B，近年因為諸多因素，準備回台灣改做 2C 的生意，因此有架設網站販售的需求。<br><br>
 
-接著可以在 <code>main/js</code> 中引入：<br><br>
+在談完網站相關需求後，朋友和媽媽（朋友的媽媽）便自顧的談起生意。朋友在台灣也有自己成立的公司。<br><br>
 
-<pre><code>
-//按需載入 bar、legend 
+「中東某國家（不便透露）多是直營店，他們的電商做不起來，因為基礎網路設施還不夠成熟，連 4G 都是近年才有的。他們的消費習慣和台灣完全不一樣，我們習慣的電商不適合他們。」媽媽。<br><br>
 
-import ECharts from 'vue-echarts'
-import 'echarts/lib/chart/bar'
-import 'echarts/lib/component/legend'
+「加上國情不同，他們人民出國不便，所以我們在當地做 2B 才有價值。在台灣的話，買一張機票隨便就能出國，做 2B 的生意競爭太大就不合適了，只能轉做 2C 才行。」媽媽。<br><br>
 
-</code></pre><br><br>
+...<br><br>
 
-在 <code>webpack.base.conf.js</code> 的 babel-loader 中加上：<br><br>
+「那麼，接下來我先從通路開始下手？」朋友問。<br><br>
 
-<pre><code>
-// resize-detector 是自適應工具
+「對，你得走以前我走過的路，一間間百貨去看，去觀察吸引你的貨物有哪些。在夏天時，準備冬天的貨品，冬天時，則準備夏天的。此外，還有 everyday 的貨品也要看。」媽媽。<br><br>
 
-resolve('node_modules/vue-echarts'),
-resolve('node_modules/resize-detector')
+一整晚的談話就如上述所見，但我觀察到的重點不只是內容，而是這樣的家庭互動方式，在其他家庭裡並不多見。<br><br>
 
-</code></pre><br><br>
+從內容來看，回答了我開頭的提問。<b>媽媽不是從書本上學到如何做生意，而是將親身經歷化作生意經。</b><br><br>
 
+對她來說，架設網站只是工作方案之一，而我，就是架設網站的工具。<br><br>
 
-直接上程式碼：<br><br>
-<pre><code>
+媽媽懂得<b>運用工具</b>為她解決生意上的問題，例如每月聘請會計師協助作帳，一通電話請廠商提供樣品，一則微信請熟悉的人幫忙打通通路。<br><br>
 
-&lt;template>
-  &lt;v-chart class="result-feedback-pie-chart" :options="mainPieSet" ref='echarts' auto-resize/>
-&lt;/template>
+<h3 class="article-h1-color">耳濡目染</h3><br>
 
-&lt;script>
+一般家庭回家後，多是一起看個電視，各自玩手機，不然就是吃飯或玩遊戲。<br><br>
 
-  data () {
-    return {
-      mainPieSet: {
-        xAxis: [
-          {
-            type: 'category',
-            data: ['1', '2', '3', '4', '5'],
-            axisLine: {
-              show: false
-            },
-            axisLabel: {
-              textStyle: {
-                color: '#BEC6DB',
-                fontSize: '12'
-              }
-            }
-          }
-        ],
-        yAxis: [
-          {
-            name: '%',
-            splitNumber: 2,
-            nameTextStyle: {
-              color: '#BEC6DB',
-              padding: [0, 28, 0, 0]
-            },
-            type: 'value',
-            axisLine: {
-              show: false
-            },
-            axisLabel: {
-              textStyle: {
-                color: '#BEC6DB',
-                fontSize: '12'
-              }
-            },
-            splitLine: {
-              show: false
-            },
-            axisTick: {
-              show: false
-            }
-          }
-        ],
-        legend: {
-          data: ['你的公司', '其他企業'],
-          right: 100,
-          itemGap: 30,
-          textStyle: {
-            color: '#BEC6DB'
-          }
-        },
-        series: [
-          {
-            data: [],
-            type: 'bar',
-            stack: '總量',
-            barWidth: '25%',
-            color: '#BEC6DB',
-            label: {
-              normal: {
-                show: true,
-                position: 'top'
-              }
-            }
-          },
-          {
-            name: '你的公司',
-            type: 'bar',
-            stack: '總量',
-            color: '#28FFEA',
-            label: {
-              normal: {
-                show: true,
-                position: 'top',
-                color: '#28FFEA',
-                fontSize: 14
-              }
-            },
-            data: ['-', '-', 50, '-', '-']
-          },
-          {
-            name: '其他企業',
-            type: 'bar',
-            stack: '總量',
-            color: '#30394B',
-            label: {
-              normal: {
-                show: false,
-                position: 'bottom',
-                color: '#30394B'
-              }
-            },
-            data: [20, 72, '-', 30, 70]
-          }
-        ]
-      },
-      ready: function () {
-        window.addEventListener('resize', () => {
-        this.$refs.swiperOption.resize()
-        }, false)
-      }
-    }
-  }
+然而朋友回家卻是和母親談生意，從小也耳濡目染著生意經，迥異於常人的生活型態，讓朋友的思維與眾不同，年紀輕輕就開了公司，賺取數倍於上班族的收入，每年中東、香港、中國四處飛，也早早成家立業有了房車與小孩。<br><br>
 
-&lt;script>
+這位朋友總能帶我脫離舒適圈，給了我一般上班族無法借鏡的思維，我的專業再怎麼深入，最多只能成為強大的工具人，而朋友則是使用不同工具，完成任務的人。<br><br>
 
-</code></pre><br><br>
+上班族的思維除了用在專業上，還用在應對主管上，耗費了許多精力。此外，我們常覺得老闆不比我們聰明，事實上也沒錯。但是，為什麼他是老闆，而你是員工呢？<br><br>
 
-名詞解釋：<br><br>
-auto-size：按照瀏覽器寬度自動調整圖表寬度。<br>
-xAxis：為 x 軸設定。<br>
-axisLine：是 x 軸線，我將它預設為消失。<br>
-axisLabel：可以修改 x 軸標籤的樣式。<br><br>
-
-yAxis：為 y 軸設定，內容同上。<br>
-name：為 y 軸上方名稱。<br>
-nameTextStyle：調整名稱樣式。<br>
-splitNumber：可以選擇顯示的 y 比數。<br><br>
-
-legend：是按需引入的應用之一，顯示上方的文字。<br>
-itemGap：字距。其他的則是樣式的設定。<br><br>
-
-series：是圖表繪製的核心，因為這次有兩種類別 － 你的公司、其他企業，所以會以物件方式隔開。<br>
-barWidth：調整柱體寬度。<br>
-type：圖表類型，bar 是按需載入的原件之一，柱狀圖表。<br>
-label：調整樣式，以及顯示數值。<br>
-data：填充的數值。<br><br>
-
-教學到這裡告一段落，也算是紀錄這個圖表應該怎麼畫，目前的設定有很些是多餘的，例如 label 已經不會 show 出來，樣式是可以清除掉的等等，下次換紀錄 D3 的使用吧。
+這則問題留待下次思考，同時我腦海也縈繞著一則問題：為什麼劉備、曹操、孫權是天下的主角，而數倍於他們智慧的郭嘉、孔明、陸遜不是呢？<br><br>
 
 <br><br><br>
 
@@ -444,15 +303,10 @@ data：填充的數值。<br><br>
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/20190528/" data-toggle="tooltip" data-placement="top" title="google form 表單收集資料 | 無須資料庫">&larr;
+                        <a href="/post/20191017/" data-toggle="tooltip" data-placement="top" title="人生如何過的更好？">&larr;
                             上一篇</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/20190606/" data-toggle="tooltip" data-placement="top" title="前端工程師半年紀錄">新的一篇
-                             &rarr;</a>
-                    </li>
                     
                 </ul>
 
